@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -70,6 +73,78 @@ nav .logo img {
   border: 0;
   border-bottom: 1px solid lightgray;
 }
+
+.container {
+  margin-top: 90px;
+  transition: all .3s ease;
+}
+
+.container .beanew-section {
+  padding: 0 16px;
+}
+
+.container .beatop-section {
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.container .latsos-section {
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.container .latsos-section p {
+  color: grey
+}
+
+.container .loader {
+  position: relative;
+  left: 45%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #02B888;
+  width: 20px;
+  height: 20px;
+}
+
+.container .detik2 {
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+}
+
+.container .detik25 {
+  animation: spin 2.5s linear infinite;
+  -webkit-animation: spin 2.5s linear infinite;
+}
+
+.container .detik3 {
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 .navbottom {
   width: 100%;
