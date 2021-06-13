@@ -82,7 +82,11 @@ nav .logo img {
   margin-bottom: 70px;
 }
 
-.container .bea-section h2 {
+.container .bea-section {
+  margin-top: 25px;
+}
+
+.container .bea-section h3 {
   padding: 0 16px;
   font-weight: 600;
 }
@@ -101,8 +105,8 @@ nav .logo img {
 
 .container .bea-section .scrollcon .card {
   margin: 0 0 0 16px;
-  width: 250px;
-  min-width: 250px;
+  width: 220px;
+  min-width: 220px;
   background-color: white;
   border-radius: 5px;
   margin-bottom: 16px;
@@ -131,6 +135,7 @@ nav .logo img {
   font-size: 12px;
   margin: 5px 8px 5px 0;
   display: flex;
+  align-items: center;
 }
 
 .container .bea-section .scrollcon .card .text .tags-group .tags:before {
@@ -165,9 +170,6 @@ nav .logo img {
   color: #FF000095;
   display: flex;
   align-items: center;
-  background-color: #FF000010;
-  padding: 5px 10px;
-  border-radius: 50px
 }
 
 .container .bea-section .scrollcon .card .text .group .deadline .iconify {
@@ -179,10 +181,15 @@ nav .logo img {
   padding: 8px;
 }
 
-.container .latsos-section h2 {
+.container .latsos-section {
+  margin-top: 25px;
+}
+
+.container .latsos-section h3 {
   padding: 0 16px;
   font-weight: 600;
 }
+
 .container .latsos-section .subs {
   color: grey;
   padding: 0 16px;
@@ -302,26 +309,37 @@ nav .logo img {
 
 .navbottom .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
+  padding: 10px 30px;
 }
 
 .navbottom .wrapper .item {
-  width: 65px;
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .navbottom .wrapper .item .iconify {
   font-size: 30px;
+  margin-bottom: 0;
   color: lightgray;
 }
 
 .navbottom .wrapper .item .tabler {
   font-size: 35px;
+}
+.navbottom .wrapper .item p{
+  transform: translateY(-5px);
+  color: lightgrey;
+}
+.navbottom .wrapper .active p{
+  transform: translateY(-5px);
+  color: black;
+}
+
+.navbottom .wrapper .alt p{
+  transform: translateY(-10px);
 }
 
 .navbottom .wrapper .active .iconify {
