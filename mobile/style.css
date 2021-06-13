@@ -29,32 +29,32 @@ nav .group {
 }
 
 nav .menu {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav .menu .iconify {
-  font-size: 35px
+  font-size: 25px
 }
 
 nav .logo {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav .logo img {
-  height: 35px;
+  height: 30px;
 }
 
 .search-section {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 60px;
   position: absolute;
   top: -100px;
   transition: all .3s ease;
@@ -77,9 +77,9 @@ nav .logo img {
 }
 
 .container {
-  margin-top: 90px;
+  margin-top: 75px;
   transition: all .3s ease;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .container .bea-section h2 {
@@ -179,12 +179,79 @@ nav .logo img {
   padding: 8px;
 }
 
-.container .latsos-section {
+.container .latsos-section h2 {
+  padding: 0 16px;
+  font-weight: 600;
+}
+.container .latsos-section .subs {
+  color: grey;
   padding: 0 16px;
 }
 
-.container .latsos-section p {
-  color: grey
+.container .latsos-section .scrollcon {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  margin-top: 10px;
+}
+
+.container .latsos-section .scrollcon .card {
+  margin: 0 0 0 16px;
+  width: 300px;
+  min-width: 300px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  transition: all .3s ease;
+  display: flex;
+}
+
+.container .latsos-section .scrollcon .card:hover {
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, .05);
+  transition: all .3s ease;
+}
+
+.container .latsos-section .scrollcon .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px 0 0 5px;
+}
+
+.container .latsos-section .scrollcon .card .text {
+  padding: 5px 3px 10px 8px;
+}
+
+.container .latsos-section .scrollcon .card .text .group {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.container .latsos-section .scrollcon .card .text .group .lokasi {
+  display: flex;
+  align-items: center;
+  color: #00000070;
+}
+
+.container .latsos-section .scrollcon .card .text .group .lokasi .iconify {
+  margin-right: 2px;
+  font-size: 18px;
+}
+
+.container .latsos-section .scrollcon .card .text .group .deadline {
+  color: #FF000095;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.container .latsos-section .scrollcon .card .text .group .deadline .iconify {
+  margin-right: 2px;
+  font-size: 18px;
+}
+
+.container .latsos-section .scrollcon .card-empty {
+  padding: 8px;
 }
 
 .container .loader {
@@ -224,8 +291,6 @@ nav .logo img {
   }
 }
 
-
-
 .navbottom {
   width: 100%;
   position: fixed;
@@ -237,26 +302,26 @@ nav .logo img {
 
 .navbottom .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 16px;
 }
 
 .navbottom .wrapper .item {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navbottom .wrapper .item .iconify {
-  font-size: 35px;
+  font-size: 30px;
   color: lightgray;
 }
 
 .navbottom .wrapper .item .tabler {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .navbottom .wrapper .active .iconify {
