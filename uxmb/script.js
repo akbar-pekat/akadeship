@@ -19,7 +19,7 @@ $('#valid').on('click', function () {
                 alert("Terjadi kesalahan Login! Jika ini terus terjadi, hubungi Panitia")
             });
     } else {
-        alert("woi salah kode ko buta!");
+        alert("Kode salah, cek ulang kode captcha-nya yah");
     }
 });
 
@@ -29,4 +29,15 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
         console.log("Silahkan Login terlebih dahulu")
     }
+});
+
+$(document).ready(function () {
+    var _originalSize = $(window).width() + $(window).height()
+    $(window).resize(function () {
+        if ($(window).width() + $(window).height() != _originalSize) {
+            $(".partner").hide();
+        } else {
+            $(".partner").show();
+        }
+    });
 });
