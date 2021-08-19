@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Beasiswa Hunter!">
+  <meta name="description"
+    content="Beasiswa Hunter adalah portal informasi untuk menampilkan informasi berbagai jenis dan macam beasiswa, dari pendidikan dasar hingga tingkat doktor.">
+  <meta name="keywords"
+    content="Beasiswa, Hunter, Portal, Informasi, Pendidikan, Sarjana, Magister, Doktor, SD, SMP, SMA">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Indonesia">
+  <meta name="author" content="Beasiswa Hunter">
+  <meta property="og:image" content="img/Logo.svg">
+
+  <title>Beasiswa | Beasiswa Hunter</title>
+
+  <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/beasiswa.css">
+
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand me-0" href="#">
+        <img src="img/Logo.svg" alt="Logo" height="45">
+      </a>
+      <div class="mx-3"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex">
+          <input class="form-control me-2 shadow-none" hidden id="search-input" type="search"
+            placeholder="Masukkan nama beasiswa/kata kunci">
+          <button class="btn btn-primary shadow-none px-4" hidden type="submit">Cari</button>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-item-center" href="#">
+				<img src="img/icon/teacher active.svg" class="me-1">
+				Beasiswa
+			</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link d-flex align-item-center" href="#">
+				<img src="img/icon/calendar-tick.svg" class="me-1">
+				Event
+			</a>
+          </li>
+          <li class="nav-item dropdown">
+			<a class="nav-link d-flex align-item-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+				<img src="img/icon/more-square.svg" class="me-1">
+				Lainnya
+			</a>
+            <ul class="dropdown-menu">
+              <li hidden><a class="dropdown-item" href="#">Kerja Sama</a></li>
+              <li><a class="dropdown-item" href="#">Dukung Kami</a></li>
+              <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+            </ul>
+          </li>
+        </ul>
+		<a href="req_bea.html" class="btn btn-outline-primary shadow-none px-4"hidden>Upload</a>
+      </div>
+    </div>
+  </nav>
+  <div class="list-view">
+      <div class="container-fluid pt-3">
+        <div class="d-flex justify-content-between">
+          <select class="form-select shadow-none">
+            <option value="1">S1 - Sarjana</option>
+            <option value="2">S2 - Magister</option>
+            <option value="3">S3 - Doktor</option>
+          </select>
+          <select class="form-select shadow-none">
+            <option value="1">Dalam Negeri</option>
+            <option value="2">Luar Negeri</option>
+          </select>
+          <select class="form-select shadow-none">
+            <option value="1">Januari</option>
+            <option value="2">Februari</option>
+            <option value="3">Maret</option>
+            <option value="8">Agustus</option>
+          </select>
+          <button class="btn btn-primary shadow-none px-4" type="button">Tampilkan</button>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6">
+            <div class="card beasiswa">
+              <div class="row g-0">
+                <div class="container-image"></div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <div class="badge-container">
+                      <span class="badge text-dark  fw-normal">Sarjana S1</span>
+                      <span class="badge text-dark  fw-normal">Indonesia</span>
+                    </div>
+                    <h5 class="card-title mt-2 mb-0">Beasiswa Aperti BUMN 2021</h5>
+                    <p class="card-text mb-2"><small>APERTI BUMN</small></p>
+                    <p class="card-text"><small class="text-danger">Deadline: -</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card beasiswa">
+              <div class="row g-0">
+                <div class="container-image"></div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <div class="badge-container">
+                      <span class="badge text-dark  fw-normal">Sarjana S1</span>
+                      <span class="badge text-dark  fw-normal">Indonesia</span>
+                    </div>
+                    <h5 class="card-title mt-2 mb-0">Beasiswa Aperti BUMN 2021</h5>
+                    <p class="card-text mb-2"><small>APERTI BUMN</small></p>
+                    <p class="card-text"><small class="text-danger">Deadline: -</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card beasiswa">
+              <div class="row g-0">
+                <div class="container-image"></div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <div class="badge-container">
+                      <span class="badge text-dark fw-normal">Sarjaana S1</span>
+                      <span class="badge text-dark fw-normal">Indonesia</span>
+                    </div>
+                    <h5 class="card-title mt-2 mb-0">Beasiswa Aperti BUMN 2021</h5>
+                    <p class="card-text mb-2"><small>APERTI BUMN</small></p>
+                    <p class="card-text"><small class="text-danger">Deadline: -</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card beasiswa">
+              <div class="row g-0">
+                <div class="container-image"></div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <div class="badge-container">
+                      <span class="badge text-dark  fw-normal">Sarjana S1</span>
+                      <span class="badge text-dark  fw-normal">Indonesia</span>
+                    </div>
+                    <h5 class="card-title mt-2 mb-0">Beasiswa Aperti BUMN 2021</h5>
+                    <p class="card-text mb-2"><small>APERTI BUMN</small></p>
+                    <p class="card-text"><small class="text-danger">Deadline: -</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="offcanvas-loading" id="offcanvas-loading">
+		<div class="ocl-body">
+			<div class="lds-ring">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<div class="offcanvas-empty" id="offcanvas-empty">
+		<div class="oce-body text-center">
+			<img src="img/oce-image.png">
+			<h4 class="mt-1">Pilih dulu gih ;)</h4>
+			<p>Klik salah satu Beasiswa disamping<br>untuk melihat informasi detailnya</p>
+		</div>
+	</div>
+	<div class="offcanvas offcanvas-end show" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasRight">
+      <div class="offcanvas-body">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <div class="container-image me-3"></div>
+            <div>
+              <h4 class="title mb-0">Beasiswa Aperti BUMN 2021</h4>
+              <p class="card-text"><small>APERTI BUMN</small></p>
+				<div class="d-flex align-item-center">
+					<img src="img/icon/clock.svg" class="me-1">
+					<p class="card-text text-danger mt-1">Deadline: Agustus</p>
+				</div>
+			</div>
+          </div>
+		  
+          <ul class="nav nav-pills nav-fill mt-4 tabs">
+            <li class="nav-item">
+              <p class="nav-link active" href="#" id="deskripsi-nav">Deskripsi</p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link" href="#" id="syaratberkas-nav">Syarat & Berkas</p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link" href="#" id="benefit-nav">Benefit</p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link" href="#" id="forum-nav">Lainnya</p>
+            </li>
+			<div class="tabs-line"></div>
+          </ul>
+		  
+
+          <div class="detail-tab">
+            <p id="deskripsi-tab">
+              Deskripsi-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis convallis sapien.
+            </p>
+            <p id="syaratberkas-tab">Syarat-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis convallis
+              sapien.</p>
+            <p id="benefit-tab">Benefit-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis convallis
+              sapien.</p>
+            <p id="forum-tab">Forum-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis convallis sapien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script src="js/beasiswa.js"></script>
+
+</body>
+
+</html>
