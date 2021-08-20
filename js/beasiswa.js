@@ -84,16 +84,16 @@ $(document).ready(function () {
 		  var IdBeasiswa = entries.items[i].sys.id;
 		  var NamaBeasiswa = entries.items[i].fields.namaBeasiswa;
 		  var PenyelenggaraBeasiswa = entries.items[i].fields.penyelenggaraBeasiswa;
+		  var ThumbnailBeasiswa = entries.items[i].fields.urlThumbnailBeasiswa; 
 		  var TipeBeasiswa = entries.items[i].fields.tipeBeasiswa;
 		  var LokasiBeasiswa = entries.items[i].fields.lokasiBeasiswa;
 		  var BatasAkhirBeasiswa = entries.items[i].fields.batasAkhirBeasiswa;
 		  //console.log(entries.items[i].fields)
 		  
 		  if (PenyelenggaraBeasiswa.length > count) {
-			$(".subs-penyelenggara").html('<marquee scrollamount="2"><small>' + PenyelenggaraBeasiswa + '</small></marquee>');
-			$("#row-card").append('<div class="col-6"><div class="card beasiswa" data-id="'+IdBeasiswa+'"><div class="row g-0"><div class="container-image"></div><div class="col-md-6"><div class="card-body"><div class="badge-container"><span class="badge text-dark fw-normal me-1">'+TipeBeasiswa+'</span><span class="badge text-dark fw-normal">'+LokasiBeasiswa+'</span></div><h5 class="card-title mt-2 mb-0">'+NamaBeasiswa+'</h5><marquee class="card-text mb-2" scrollamount="2"><small>' + PenyelenggaraBeasiswa + '</small></marquee><p class="card-text"><small class="text-danger">Deadline: '+BatasAkhirBeasiswa+'</small></p></div></div></div></div></div>');
+			$("#row-card").append('<div class="col-6"><div class="card beasiswa" data-id="'+IdBeasiswa+'"><div class="row g-0"><img class="container-image" src="'+ThumbnailBeasiswa+'"><div class="col-md-6"><div class="card-body"><div class="badge-container"><span class="badge text-dark fw-normal me-1">'+TipeBeasiswa+'</span><span class="badge text-dark fw-normal">'+LokasiBeasiswa+'</span></div><h5 class="card-title mt-2 mb-0">'+NamaBeasiswa+'</h5><marquee class="card-text mb-2" scrollamount="2"><small>'+PenyelenggaraBeasiswa+'</small></marquee><p class="card-text"><small class="text-danger">Deadline: '+BatasAkhirBeasiswa+'</small></p></div></div></div></div></div>');
 		  } else {
-			$("#row-card").append('<div class="col-6"><div class="card beasiswa" data-id="'+IdBeasiswa+'"><div class="row g-0"><div class="container-image"></div><div class="col-md-6"><div class="card-body"><div class="badge-container"><span class="badge text-dark fw-normal me-1">'+TipeBeasiswa+'</span><span class="badge text-dark fw-normal">'+LokasiBeasiswa+'</span></div><h5 class="card-title mt-2 mb-0">'+NamaBeasiswa+'</h5><p class="card-text mb-2"><small>'+PenyelenggaraBeasiswa+'</small></p><p class="card-text"><small class="text-danger">Deadline: '+BatasAkhirBeasiswa+'</small></p></div></div></div></div></div>');
+			$("#row-card").append('<div class="col-6"><div class="card beasiswa" data-id="'+IdBeasiswa+'"><div class="row g-0"><img class="container-image" src="'+ThumbnailBeasiswa+'"><div class="col-md-6"><div class="card-body"><div class="badge-container"><span class="badge text-dark fw-normal me-1">'+TipeBeasiswa+'</span><span class="badge text-dark fw-normal">'+LokasiBeasiswa+'</span></div><h5 class="card-title mt-2 mb-0">'+NamaBeasiswa+'</h5><p class="card-text mb-2"><small>'+PenyelenggaraBeasiswa+'</small></p><p class="card-text"><small class="text-danger">Deadline: '+BatasAkhirBeasiswa+'</small></p></div></div></div></div></div>');
 		  }		  
 		}
 		
@@ -108,6 +108,8 @@ $(document).ready(function () {
 				$("#NamaBeasiswa").text(entry.fields.namaBeasiswa);
 				$("#PenyelenggaraBeasiswa").text(entry.fields.penyelenggaraBeasiswa);
 				$("#BatasAkhirBeasiswa").text("Deadline: "+entry.fields.batasAkhirBeasiswa);
+			    var ThumbnailBea = entry.fields.urlThumbnailBeasiswa; 
+				$("#cioc").attr("src", ThumbnailBea);
 				const DeskripsiBeasiswa = entry.fields.deskripsiBeasiswa;
 				return documentToHtmlString(DeskripsiBeasiswa);
 			}).then(renderedHtml => {
