@@ -69,7 +69,7 @@
 	.bg-light {
 		background-color: #00000003!important;
 	}
-
+	
 	.listview-loading {
 		width: 62%;
 		height: 86vh;
@@ -136,6 +136,15 @@
 		border: 1px solid #00000020;
 		border-radius: 6px;
 		background-color: #2e1d5510;
+	}
+	
+	.bg-cs {
+		background-color: #2e1d5510;
+		color: #2e1d5580;
+		padding: 2px 3px;
+		font-weight: normal;
+		height: 100%;
+		margin-top: 3px;
 	}
 
 	.offcanvas-loading {

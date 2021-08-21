@@ -29,43 +29,43 @@ $(document).ready(function () {
 	var desknav = $("#deskripsi-nav");
 	var syabernav = $("#syaratberkas-nav");
 	var benefnav = $("#benefit-nav");
-	var fornav = $("#forum-nav");
+	var lainav = $("#lain-nav");
 
 	var desktab = $("#deskripsi-tab");
 	var syabertab = $("#syaratberkas-tab");
 	var beneftab = $("#benefit-tab");
-	var fortab = $("#forum-tab");
+	var laitab = $("#lain-tab");
 
 	syabertab.hide();
 	beneftab.hide();
-	fortab.hide();
+	laitab.hide();
 		
 	desknav.click(function () {
 		desktab.show();
 		syabertab.hide();
 		beneftab.hide();
-		fortab.hide();
+		laitab.hide();
 	});
 
 	syabernav.click(function () {
 		desktab.hide();
 		syabertab.show();
 		beneftab.hide();
-		fortab.hide();
+		laitab.hide();
 	});
 
 	benefnav.click(function () {
 		desktab.hide();
 		syabertab.hide();
 		beneftab.show();
-		fortab.hide();
+		laitab.hide();
 	});
 
-	fornav.click(function () {
+	lainav.click(function () {
 		desktab.hide();
 		syabertab.hide();
 		beneftab.hide();
-		fortab.show();
+		laitab.show();
 	});
 
 
@@ -105,20 +105,54 @@ $(document).ready(function () {
 			var DataIdBeasiswa = $(this).attr("data-id");
 			//alert(DataIdBeasiswa);
 			client.getEntry(DataIdBeasiswa).then(function (entry) {
-				$("#NamaBeasiswa").text(entry.fields.namaBeasiswa);
+				var NamaBeasiswa = entry.fields.namaBeasiswa;
+				$("#NamaBeasiswa").text(NamaBeasiswa);
 				$("#PenyelenggaraBeasiswa").text(entry.fields.penyelenggaraBeasiswa);
 				$("#BatasAkhirBeasiswa").text("Deadline: "+entry.fields.batasAkhirBeasiswa);
 			    var ThumbnailBea = entry.fields.urlThumbnailBeasiswa; 
 				$("#cioc").attr("src", ThumbnailBea);
+				document.title = NamaBeasiswa + " - Beasiswa | Akadeship";
 				const DeskripsiBeasiswa = entry.fields.deskripsiBeasiswa;
 				return documentToHtmlString(DeskripsiBeasiswa);
 			}).then(renderedHtml => {
-				console.log(renderedHtml);
-				$("#deskripsi-tab").html(renderedHtml);				
+				//console.log(renderedHtml);
+				$("#deskripsi-tab").html(renderedHtml);
 			}).catch(error => console.log(error));
+			
+			client.getEntry(DataIdBeasiswa).then(function (entry) {
+				const SyaratBerkasBeasiswa = entry.fields.syaratBerkasBeasiswa;
+				return documentToHtmlString(SyaratBerkasBeasiswa);
+			}).then(renderedHtml => {
+				//console.log(renderedHtml);
+				$("#syaratberkas-tab").html(renderedHtml);
+			}).catch(error => console.log(error));
+			
+			client.getEntry(DataIdBeasiswa).then(function (entry) {
+				const BenefitBeasiswa = entry.fields.benefitBeasiswa;
+				return documentToHtmlString(BenefitBeasiswa);
+			}).then(renderedHtml => {
+				//console.log(renderedHtml);
+				$("#benefit-tab").html(renderedHtml);
+			}).catch(error => console.log(error));
+			
+			client.getEntry(DataIdBeasiswa).then(function (entry) {
+				const LainnyaBeasiswa = entry.fields.lainnyaBeasiswa;
+				return documentToHtmlString(LainnyaBeasiswa);
+			}).then(renderedHtml => {
+				//console.log(renderedHtml);
+				$("#lain-tab").html(renderedHtml);
+			}).catch(error => console.log(error));
+			
 			setTimeout(function() {
 				$("#offcanvas-loading").hide();
 			}, 2000);
+			
+			//const SyaratBerkasBeasiswa = entry.fields.syaratBerkasBeasiswa;
+				//const BenefitBeasiswa = entry.fields.benefitBeasiswa;
+				//const LainnyaBeasiswa = entry.fields.lainnyaBeasiswa;
+				//return documentToHtmlString(SyaratBerkasBeasiswa);
+				//return documentToHtmlString(BenefitBeasiswa);
+				//return documentToHtmlString(LainnyaBeasiswa);
 	});
 	});
 
