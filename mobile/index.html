@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Akadeship</title>
+</head>
+
+<body class="bg-light">
+    <div class="fixed-bottom d-flex bg-white justify-content-between py-3 px-4 text-center navbottom">
+        <div class="menu active" id="home">
+            <img src="icons/home_bold.svg" id="home_ic" draggable="false">
+            <span>Awal</span>
+        </div>
+        <div class="menu" id="beasiswa">
+            <img src="icons/teacher_linear.svg" id="beasiswa_ic" draggable="false">
+            <span>Beasiswa</span>
+        </div>
+        <div class="menu" id="event">
+            <img src="icons/calendar_linear.svg" id="event_ic" draggable="false">
+            <span>Event</span>
+        </div>
+        <div class="menu" id="profil">
+            <img src="icons/user_linear.svg" id="profil_ic" draggable="false">
+            <span>Profil</span>
+        </div>
+    </div>
+    <br>
+    <div class="container listview" id="lv_home">
+        <h6>HOME</h6>
+    </div>
+    <div class="container listview" id="lv_beasiswa">
+        <div class="card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" hidden>
+            <div class="kontainer_thumbnail">
+                <div class="thumbnail"></div>
+                <div class="flex_kontainerbawah">
+                    <div class="flex_kontaineratas">
+                        <div class="kontainer_kategori">Makan Cuy</div>
+                        <div class="lengkung_atas"></div>
+                    </div>
+                    <div class="lengkung_bawah"></div>
+                </div>
+            </div>
+            <div class="kontainer_teks">
+                <div class="flex_juduldeadline">
+                    <div class="judul">Beasiswa Kominfo</div>
+                    <div class="deadline">2 Oktober</div>
+                </div>
+                <span class="penyelenggara">Kominfo DTS</span>
+            </div>
+        </div>
+    </div>
+    <div class="container listview" id="lv_event"></div>
+    <div class="container listview" id="lv_profil">
+        <h6>PROFIL</h6>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom border-0" tabindex="-1" id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header pt-4">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            ...
+        </div>
+    </div>
+
+    <lottie-player src="images/lf30_editor_ksksoe0b.json" background="transparent" speed="1"
+        style="width: 300px; height: 300px;" loop autoplay id="loading"></lottie-player>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script>
+        var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+    </script>
+    <script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"
+        charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+
+</html>
