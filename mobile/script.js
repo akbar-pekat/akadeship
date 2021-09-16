@@ -8,10 +8,10 @@ $('.navbottom .menu').click(function () {
 });
 
 $("#home").click(function () {
-    $("#home_ic").attr("src", "icons/home_bold.svg");
-    $("#beasiswa_ic").attr("src", "icons/teacher_linear.svg");
-    $("#event_ic").attr("src", "icons/calendar_linear.svg");
-    $("#profil_ic").attr("src", "icons/user_linear.svg");
+    $("#home_ic").attr("src", "mobile/icons/home_bold.svg");
+    $("#beasiswa_ic").attr("src", "mobile/icons/teacher_linear.svg");
+    $("#event_ic").attr("src", "mobile/icons/calendar_linear.svg");
+    $("#profil_ic").attr("src", "mobile/icons/user_linear.svg");
 
     $("#lv_home").fadeIn();
     $("#lv_beasiswa").hide();
@@ -20,10 +20,10 @@ $("#home").click(function () {
 });
 
 $("#beasiswa").click(function () {
-    $("#home_ic").attr("src", "icons/home_linear.svg");
-    $("#beasiswa_ic").attr("src", "icons/teacher_bold.svg");
-    $("#event_ic").attr("src", "icons/calendar_linear.svg");
-    $("#profil_ic").attr("src", "icons/user_linear.svg");
+    $("#home_ic").attr("src", "mobile/icons/home_linear.svg");
+    $("#beasiswa_ic").attr("src", "mobile/icons/teacher_bold.svg");
+    $("#event_ic").attr("src", "mobile/icons/calendar_linear.svg");
+    $("#profil_ic").attr("src", "mobile/icons/user_linear.svg");
 
     $("#loading").show();
 
@@ -39,10 +39,10 @@ $("#beasiswa").click(function () {
 });
 
 $("#event").click(function () {
-    $("#home_ic").attr("src", "icons/home_linear.svg");
-    $("#beasiswa_ic").attr("src", "icons/teacher_linear.svg");
-    $("#event_ic").attr("src", "icons/calendar_bold.svg");
-    $("#profil_ic").attr("src", "icons/user_linear.svg");
+    $("#home_ic").attr("src", "mobile/icons/home_linear.svg");
+    $("#beasiswa_ic").attr("src", "mobile/icons/teacher_linear.svg");
+    $("#event_ic").attr("src", "mobile/icons/calendar_bold.svg");
+    $("#profil_ic").attr("src", "mobile/icons/user_linear.svg");
 
     $("#loading").show();
 
@@ -57,10 +57,10 @@ $("#event").click(function () {
 });
 
 $("#profil").click(function () {
-    $("#home_ic").attr("src", "icons/home_linear.svg");
-    $("#beasiswa_ic").attr("src", "icons/teacher_linear.svg");
-    $("#event_ic").attr("src", "icons/calendar_linear.svg");
-    $("#profil_ic").attr("src", "icons/user_bold.svg");
+    $("#home_ic").attr("src", "mobile/icons/home_linear.svg");
+    $("#beasiswa_ic").attr("src", "mobile/icons/teacher_linear.svg");
+    $("#event_ic").attr("src", "mobile/icons/calendar_linear.svg");
+    $("#profil_ic").attr("src", "mobile/icons/user_bold.svg");
 
     $("#lv_home").hide();
     $("#lv_beasiswa").hide();
