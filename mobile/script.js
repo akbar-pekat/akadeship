@@ -25,15 +25,14 @@ $("#beasiswa").click(function () {
     $("#event_ic").attr("src", "mobile/icons/calendar_linear.svg");
     $("#profil_ic").attr("src", "mobile/icons/user_linear.svg");
 
-    $("#loading").show();
+    $(".loading-container").show();
 
     $("#lv_home").hide();
     $("#lv_beasiswa").hide();
     setTimeout(function () {
         $("#lv_beasiswa").fadeIn();
-        $("#loading").hide();
+        $(".loading-container").hide();
     }, 1500);
-    
     $("#lv_event").hide();
     $("#lv_profil").hide();
 });
@@ -44,14 +43,14 @@ $("#event").click(function () {
     $("#event_ic").attr("src", "mobile/icons/calendar_bold.svg");
     $("#profil_ic").attr("src", "mobile/icons/user_linear.svg");
 
-    $("#loading").show();
+    $(".loading-container").show();
 
     $("#lv_home").hide();
     $("#lv_beasiswa").hide();
     $("#lv_event").hide();
     setTimeout(function () {
         $("#lv_event").fadeIn();
-        $("#loading").hide();
+        $(".loading-container").hide();
     }, 1500);
     $("#lv_profil").hide();
 });
