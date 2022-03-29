@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.nav {
+  height: 176px;
+  background: url("img/headerbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  color: white
+}
+
+.nav .nav-text {
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.float {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #f9f9f9;
+  position: fixed;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  display: flex;
+  justify-content: space-around;
+  top: 0px;
+  z-index: 2;
+}
+
+.search {
+  margin: 0 20px;
+  padding: 16px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  position: relative;
+  top: -40px;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  display: flex;
+  justify-content: space-around;
+}
+
+.search .menu,
+.float .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.search .menu .container,
+.float .menu .container {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.search .menu .active .float .menu .active {
+  background: #8A39E110;
+}
+
+.search .menu img,
+.float .menu img {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.search .menu p,
+.float .menu p {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.search .menu:first-child p,
+.float .menu:first-child p {
+  font-weight: bold;
+  color: #8A39E1;
+}
+
+.search .vl,
+.float .vl {
+  border-left: 1px solid #ccc;
+  height: auto;
+}
+
+.beasiswa-con,
+.lomba-con,
+.forall-con,
+.webinar-con {
+  margin-top: -20px;
+}
+
+.beasiswa-con h3,
+.lomba-con h3,
+.webinar-con h3 {
+  font-size: 20px;
+  color: #292d32;
+  padding: 0px 20px;
+}
+
+.list-v {
+  margin-top: 8px;
+  padding: 0 20px;
+}
+
+.list-v .card {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.list-v .card a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.list-v .card .image {
+  position: relative;
+}
+
+.list-v .card .image img {
+  height: 200px;
+  background-size: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-v .card .image .level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #8A39E1;
+  color: white;
+  border-radius: 50px;
+  padding: 1px 6px;
+  font-size: 14px;
+}
+
+.list-v .card .caption {
+  margin-top: 12px;
+}
+
+.list-v .card .caption .info {
+  font-size: 14px;
+}
+
+.list-v .card .caption .info span {
+  color: #e92d2d;
+}
